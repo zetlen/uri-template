@@ -10,7 +10,7 @@ expression
   = "{" op:op params:paramList "}" { return expression(op, params) }
 
 op
-  = [/;:.?&+#] / ""
+  = [/;:.?&+#%] / ""
 
 pathExpression
   = "{/"
@@ -26,7 +26,7 @@ param
       cut: cut,
 			extended: e
     } }
-
+    
 substr
   = ":" digits:[0-9]+ { return parseInt(digits.join('')) }
 

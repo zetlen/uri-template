@@ -42,6 +42,10 @@ testCases["3.2.2.  Simple String Expansion"] = {
   "{keys*}": "semi=%3B,dot=.,comma=%2C",
 }
 
+testCases["3.2.2.1. Unescaped String Expansion"] = {
+  "{%hello}": "Hello World!"
+}
+
 testCases["3.2.3.  Reserved expansion"] = {
   "{+var}": "value",
   "{+hello}": "Hello%20World!",

@@ -154,6 +154,9 @@ class FormStartExpression extends NamedExpression
 class FormContinuationExpression extends FormStartExpression
   first: '&'
 
+class UnescapedExpression extends SimpleExpression
+  encode: (string) -> string;
+
 module.exports = {
   Template
   SimpleExpression
@@ -175,5 +178,6 @@ module.exports = {
       when ';' then PathParamExpression
       when '?' then FormStartExpression
       when '&' then FormContinuationExpression
+      when '%' then UnescapedExpression
     new cls params
 }
