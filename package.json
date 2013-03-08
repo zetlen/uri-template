@@ -1,11 +1,11 @@
 {
-  "author": "Stephen Sugden <stephen@betsmartmedia.com> (betsmartmedia.com)",
-  "name": "uri-template",
-  "description": "Parse and expand URI templates as defined by http://tools.ietf.org/html/draft-gregorio-uritemplate-08",
-  "version": "0.3.3",
+  "author": "James Zetlen <james_zetlen@volusion.com> (volusion.com) forked from Stephen Sugden <stephen@betsmartmedia.com> (betsmartmedia.com)",
+  "name": "uri-template-w-unescaped",
+  "description": "Parse and expand URI templates as defined by http://tools.ietf.org/html/draft-gregorio-uritemplate-08, with the additional, non-RFC {%unescaped} expression",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "git://github.com/grncdr/uri-template.git"
+    "url": "git://github.com/zetlen/uri-template.git"
   },
   "main": "parser.js",
   "scripts": {
